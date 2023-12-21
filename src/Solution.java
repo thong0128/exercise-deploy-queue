@@ -4,10 +4,10 @@ public class Solution {
         for (int i = 0; i < 10; i++) {
             myQueue.enQueue(i);
         }
-        System.out.println(myQueue.displayQueue());
+        myQueue.displayQueue();
 
         Queue myQueue1 = new Queue();
         myQueue1.enQueue(10);
-        System.out.println(myQueue1.displayQueue());
+        myQueue1.displayQueue();
     }
 }

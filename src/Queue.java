@@ -32,17 +32,16 @@ public class Queue {
         return temp;
     }
 
-    public String displayQueue() {
-        String display = "{";
+    public void displayQueue() {
+        System.out.print("{");
         Node temp = this.front;
         do {
             if (temp == this.rear)
-                display += temp.data;
+                System.out.print(temp.data);
             else
-                display += temp.data + ", ";
+                System.out.print(temp.data + ", ");
             temp = temp.link;
         }while (temp!=this.front);
-        display += "}";
-        return display;
+        System.out.print("}\n");
     }
 }
