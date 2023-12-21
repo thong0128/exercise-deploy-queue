@@ -33,6 +33,10 @@ public class Queue {
     }
 
     public void displayQueue() {
+        if (this.front == null) {
+            System.out.println("{}\n");
+            return;
+        }
         System.out.print("{");
         Node temp = this.front;
         do {
@@ -41,7 +45,8 @@ public class Queue {
             else
                 System.out.print(temp.data + ", ");
             temp = temp.link;
-        }while (temp!=this.front);
+        } while (temp != this.front);
         System.out.print("}\n");
+
     }
 }
