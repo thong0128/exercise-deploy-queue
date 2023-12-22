@@ -38,12 +38,11 @@ public class Queue {
             return;
         }
         System.out.print("{");
+        String separator = "";
         Node temp = this.front;
         do {
-            if (temp == this.rear)
-                System.out.print(temp.data);
-            else
-                System.out.print(temp.data + ", ");
+            System.out.print(separator + temp.data );
+            separator = ", ";
             temp = temp.link;
         } while (temp != this.front);
         System.out.print("}\n");
